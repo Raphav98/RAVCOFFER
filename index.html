@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>RavCoffer</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="circulo"> </div>
+    <img src="./img/logoravcoffer.jpg" alt="Logo RavCoffer" class="Logo"  width="100px" height="100px">
+   
+    <div class="Conteudo">
+
+        <div class="texto">
+
+    <h2> Não é apenas Cáfe, é um <strong><span> RavCoffer</span></strong> </h2>
+    <P> Adentre o mundo dos sabores refinados em nossa cafetaria, onde cada xícara é uma jornada sensorial única. Deixe-se envolver pelo aroma cativante e pela qualidade incomparável do nosso café artesanal. Descubra um refúgio de prazer e sofisticação para os amantes da boa cafeína. Seu deleite começa aqui.</P>
+    <button> Faça o seu pedido</button>
+</div>
+   
+<div class="imagem">
+<img class="Copogrande" src="./img/Img.jpg" alt="Coporavcoffer">
+</div>
+
+
+</div>
+ <div class="Menu">
+ <img  src="./img/limao.jpg" class="Copo-pequeno Verde" width="100px" height="120px">
+ <img  src="./img/morango.jpg" class="Copo-pequeno Rosa"  >
+ <img  src="./img/cappuccino.jpg" class="Copo-pequeno cappuccino" >
+
+</div>
+<script>
+
+let circulo=document.querySelector(".circulo")
+let Copogrande = document.querySelector(".Copogrande")
+let Verde = document.querySelector(".Verde")
+let Rosa = document.querySelector(".Rosa")
+let cappuccino = document.querySelector(".cappuccino")
+
+Rosa.addEventListener("click", () => {
+ Copogrande.src="./img/morango.jpg"
+ circulo.style.background = "#eb7495" 
+    
+})
+
+Verde.addEventListener("click", () => {
+ Copogrande.src="./img/limao.jpg"
+ circulo.style.background = "#60472f"    
+})
+
+cappuccino.addEventListener("click", () => {
+ Copogrande.src="./img/cappuccino.jpg"
+ circulo.style.background = "#a3988d"    
+})
+
+</script>
+
+
+</html>
